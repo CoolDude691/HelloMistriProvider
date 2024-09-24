@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context="com.hellomistri.hellomistriprovidern.View.Edit_User"
+    android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+     android:background="@android:color/white"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/popsemi"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="@color/primary_color_light_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gooden"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/primary_color_light_blue"
+        android:theme="@style/EditText.Green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/popsemi"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="@color/primary_color_light_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        tools:ignore="TextSizeCheck,TextSizeCheck,TextSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gooden"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/primary_color_light_blue"
+        android:theme="@style/EditText.Green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/popsemi"
+        android:text="City"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/userEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="@color/primary_color_light_blue" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gooden"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/primary_color_light_blue"
+        android:theme="@style/EditText.Green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Phone"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/popsemi"
+        android:text="Distance"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/userPhone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="@color/primary_color_light_blue" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gooden"
+        android:inputType="text"
+
+        android:lines="2"
+        android:maxLines="2"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+
+        android:textColor="@color/primary_color_light_blue"
+        android:theme="@style/EditText.Green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/Pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/popsemi"
+        android:text="Aahar"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/userAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="@color/primary_color_light_blue" />
+
+    <ImageView
+        android:id="@+id/userPincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/gooden"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="@color/primary_color_light_blue"
+        android:theme="@style/EditText.Green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pincode"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+    <TextView
+        android:id="@+id/Sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/popsemi"
+        android:text="Aadhar front"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/userPincode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="@color/primary_color_light_blue" />
+
+    <ImageView
+        android:id="@+id/userSubCtegory"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gooden"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="3"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/Sub"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/primary_color_light_blue"
+        android:theme="@style/EditText.Green" />
+
+
+
+    <TextView
+        android:id="@+id/Sub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="32dp"
+        android:fontFamily="@font/popsemi"
+        android:text="Aadhackr Back"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/userSubCtegory"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="@color/primary_color_light_blue" />
+
+    <ImageView
+        android:id="@+id/userSubCtegory1"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gooden"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="3"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/Sub1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/primary_color_light_blue"
+        android:theme="@style/EditText.Green" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/userSubCtegory1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

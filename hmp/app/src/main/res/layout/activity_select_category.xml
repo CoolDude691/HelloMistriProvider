@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.hellomistri.hellomistriprovidern.View.Select_Category">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/popbold"
+            android:text="@string/what_work_you_do"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/search"
+                android:drawableLeft="@drawable/ic_searchox"
+                android:elevation="5dp"
+                android:hint="@string/search"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:padding="10dp">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/txt_cuntinue"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_rounded_green"
+                android:backgroundTint="@color/primary_color_blue"
+                android:gravity="center"
+                android:fontFamily="@font/popbold"
+                android:text="@string/cuntinue"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerNew"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

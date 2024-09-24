@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">Hello Mistri Provider</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgrot">Forgot Password!</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="code">Code</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="what_work_you_do">What work you do</string>
+    <string name="search">Search..</string>
+    <string name="cuntinue">Continue</string>
+    <string name="label_1">New</string>
+    <string name="label_2">Ongoing</string>
+    <string name="label_3">Credit</string>
+    <string name="string_label_4">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_record">No Record</string>
+    <string name="no_pending_record">No Pending Record Found</string>
+    <string name="accept">Accept</string>
+    <string name="customer_location">Customer Location</string>
+    <string name="see_on_map">See on Map</string>
+    <string name="call_customer">Call Customer</string>
+    <string name="complete">Complete</string>
+    <string name="select_setvice">Selected Services</string>
+    <string name="listaddon">List Addon</string>
+    <string name="api_key">AIzaSyDkZNCCKndKwuzeZ2ZxkWyzXn_Zp1zxhLQ</string>
+    <string name="api_key_new">AIzaSyD7fEO0AWJflkQH4_IEvGbzy4wsL0EVbZ0</string>
+    <string name="api_key_new_one">AIzaSyBZORqFFS1enFCHYfbY7pov8rV_XmsJvoE</string>
+    <string name="submit">Submit</string>
+    <string name="label_5">Complete</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="transections">Transation</string>
+    <string name="logout">Logout</string>
+    <string name="notification_top">Notification</string>
+    <string name="logoutmessege">"Are you sure you want to logout "</string>
+    <string name="update">Update</string>
+    <string name="pincode">Pincode</string>
+    <string name="distance">Distance (In Km.)</string>
+    <string name="sub_category">Sub category</string>
+    <string name="open_nav">Open Nav</string>
+    <string name="close_nav">Close Nav</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <style name="Dialog.Theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/primary_color_light_blue</item>
+        <item name="colorPrimaryDark">@color/primary_color_light_blue</item>
+        <item name="colorAccent">@color/primary_color_light_blue</item>
+    </style>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_color_light_blue</item>
+        <item name="colorPrimaryDark">@color/primary_color_light_blue</item>
+        <item name="colorAccent">@color/primary_color_light_blue</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/primary_color_light_blue</item>
+        <item name="android:dialogTheme">@style/Dialog.Theme</item>
+    </style>
+
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="notificationDescription">New Lead Generated From Hello Mistry App , Please Pic the Lead</string>
+
+    <style name="AppTheme" parent="BaseTheme" />
+
+    <style name="EditText.Green" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/primary_color_light_blue</item>
+        <item name="colorControlHighlight">@color/primary_color_light_blue</item>
+        <item name="colorControlNormal">@color/primary_color_light_blue</item>
+    </style>
+
+    <style name="Toolbar.Light" parent="@style/AppTheme">
+        <item name="colorControlNormal">@color/grey_60</item>
+        <item name="android:textColorPrimary">@color/grey_60</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Add attributes here -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+    </style>
+
+    <style name="AppTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <string name="hyperlink"><a href="https://www.hellomistri.com/contact">Get Help</a></string>
+
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="lorem_ipsum_dolor_sit_amet_non_suscipit_quibusdam_nam_libero_perspiciatis_sed_voluptatem_enim_ut_cupiditate_ducimus_aut_quia_deserunt_id_omnis_voluptatem_cum_voluptatem_voluptates_qui_rerum_unde_33_animi_praesentium_33_voluptatem_enim_qui_expedita_dolorum_ad_voluptas_repudiandae_et_corporis_quasi_aut_omnis_molestiae_ex_dolores_adipisci_et_numquam_totam_aut_aliquid_ipsa_sed_eveniet_obcaecati_in_maiores_nihil_ut_nostrum_laborum_est_consequatur_exercitationem_et_dolor_suscipit_p_p_ut_delectus_blanditiis_non_vitae_laboriosam_rem_porro_numquam_sed_maxime_corporis_sit_consequatur_laudantium_qui_consectetur_deserunt_et_accusantium_voluptatem_vel_consequatur_laudantium_qui_dolor_labore_et_possimus_debitis_nam_temporibus_architecto_33_dolores_consectetur_vel_nulla_laborum_qui_rerum_unde_ab_sint_galisum_aut_maiores_perspiciatis_p_p_ea_tempore_vitae_aut_molestiae_aliquam_qui_nihil_sequi_ut_quasi_illo_eum_minus_dolorem_ab_minus_magnam_nam_libero_enim_cum_saepe_ullam"><![CDATA[At HelloMistri, we are committed to protecting the privacy of our customers. This privacy policy outlines the type of personal information we collect, how we use it, and how we protect it.
+
+For Customers
+Information we collect:
+We may collect personal information from you when you use our services, such as your name, address, phone number, email address, and information about your issue. We may also collect information about your interactions with our website, including your IP address and browsing history.
+
+How we use your information:
+We use your personal information to provide our services to you, including repairing your Home appliances, designing, and other services that you request. We may also use your information for marketing purposes, such as sending you promotional emails or text messages. You can opt out of marketing communications at any time.
+
+How we protect your information:
+We take reasonable steps to protect your personal information from unauthorized access, use, or disclosure. We use industry-standard security measures, including encryption and firewalls, to protect your information.
+
+Sharing your information:
+We may share your personal information with third-party service providers that help us provide our services to you. For example, we may share your information with providers in order to repair your appliance or other issues. We may also share your information with law enforcement agencies if required by law.
+
+Your rights:
+You have the right to access, correct, or delete your personal information. You can also request that we restrict the processing of your information or transfer it to another company. To exercise these rights, please contact us using the information below.
+
+Changes to this privacy policy:
+We may update this privacy policy from time to time. If we make significant changes to the policy, we will notify you by email or by posting a notice on our website.
+
+Contact us:
+If you have any questions or concerns about our privacy policy or the way we handle your personal information, please contact us at our website.]]></string>
+    <string name="mmn">At HelloMistri, we are committed to protecting the privacy of our customers. This privacy policy outlines the type of personal information we collect, how we use it, and how we protect it.
+
+For Customers
+Information we collect:
+We may collect personal information from you when you use our services, such as your name, address, phone number, email address, and information about your issue. We may also collect information about your interactions with our website, including your IP address and browsing history.
+
+How we use your information:
+We use your personal information to provide our services to you, including repairing your Home appliances, designing, and other services that you request. We may also use your information for marketing purposes, such as sending you promotional emails or text messages. You can opt out of marketing communications at any time.
+
+How we protect your information:
+We take reasonable steps to protect your personal information from unauthorized access, use, or disclosure. We use industry-standard security measures, including encryption and firewalls, to protect your information.
+
+Sharing your information:
+We may share your personal information with third-party service providers that help us provide our services to you. For example, we may share your information with providers in order to repair your appliance or other issues. We may also share your information with law enforcement agencies if required by law.
+
+Your rights:
+You have the right to access, correct, or delete your personal information. You can also request that we restrict the processing of your information or transfer it to another company. To exercise these rights, please contact us using the information below.
+
+Changes to this privacy policy:
+We may update this privacy policy from time to time. If we make significant changes to the policy, we will notify you by email or by posting a notice on our website.
+
+Contact us:
+If you have any questions or concerns about our privacy policy or the way we handle your personal information, please contact us at our website. Please note that unless specifically defined in this Policy, capitalized terms shall have the same meaning ascribed to them in our Privacy Policy, for any query please contact us at +91-7428858436, or you can mail at hellomistrigroup@gmail.com</string>
+
+
+</resources>

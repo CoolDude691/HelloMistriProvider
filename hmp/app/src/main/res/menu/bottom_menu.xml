@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            app:showAsAction="always"
+            android:id="@+id/item1"
+            android:iconTint="@color/white"
+                android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+
+        <item
+            app:showAsAction="always"
+            android:id="@+id/item2"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_baseline_wallet_24"
+            android:title="Wallet"/>
+
+
+        <item
+            app:showAsAction="always"
+            android:id="@+id/item3"
+            android:iconTint="@color/white"
+            android:icon="@drawable/ic_person"
+            android:title="Profile"/>
+
+</menu>

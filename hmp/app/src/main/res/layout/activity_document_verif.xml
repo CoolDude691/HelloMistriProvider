@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".View.DocumentVerifAct">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainLayoutVerif"
+
+        android:paddingVertical="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/document_verif_bg"
+        android:elevation="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/logoutBtnDoc"
+            android:backgroundTint="@color/white"
+            app:borderWidth="0dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_baseline_logout_24"
+            app:fabCustomSize="45dp"/>
+
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/docGif"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+
+            android:layout_marginTop="30dp"
+            android:src="@drawable/verification"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoutBtnDoc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your spot on the waitlist"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/white"
+            android:id="@+id/docNotVerifiedText"
+            android:fontFamily="@font/popbold"
+            android:visibility="gone"
+            android:textSize="19sp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/docGif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11,203,131"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:id="@+id/noOfUserText"
+            android:fontFamily="@font/popbold"
+            app:layout_constraintTop_toBottomOf="@id/docNotVerifiedText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/popbold"
+            android:layout_height="wrap_content"
+            android:text="Your verification is still in progress.\n This may take a few hours."
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="center"
+            android:id="@+id/verifDesc"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="#C9C6C6"
+            app:layout_constraintTop_toBottomOf="@id/noOfUserText"
+            android:layout_marginTop="30dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:src="@drawable/hllo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutVerif"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

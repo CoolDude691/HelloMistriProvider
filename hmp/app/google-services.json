@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "935578546750",
+    "project_id": "hellomistriprovider-a0068",
+    "storage_bucket": "hellomistriprovider-a0068.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935578546750:android:c605dd613f69a6af05976f",
+        "android_client_info": {
+          "package_name": "com.hellomistri.hellomistriprovidern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935578546750-rn7vj9ts151au7jo785cbajr5o6r4kec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLO7N4EUULJIANpB6O6ykn1bb1ZXfW0Mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935578546750-rn7vj9ts151au7jo785cbajr5o6r4kec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hellomistri.hellomistriprovidern.View.Select_Language">
+
+
+
+    <TextView
+        android:id="@+id/SelectLanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Languages"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:fontFamily="@font/popbold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/PreferedLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prefered language"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:fontFamily="@font/popsemi"
+        app:layout_constraintTop_toBottomOf="@id/SelectLanguages"/>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/PreferedLanguage"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card1"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/v1">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="English"
+          android:textSize="15dp"
+          android:fontFamily="@font/popsemi"
+          android:textColor="@color/black"
+          android:layout_marginTop="30dp"
+          android:layout_marginLeft="20dp"/>
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/Card1"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card2"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/Card1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="हिंदी"
+            android:textSize="15dp"
+            android:fontFamily="@font/popsemi"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card3"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/Card2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="मराठी "
+            android:textSize="15dp"
+            android:fontFamily="@font/popsemi"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card4"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/Card3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ગુજરાતી"
+            android:textSize="15dp"
+            android:fontFamily="@font/popsemi"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card5"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="20dp"
+        android:elevation="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/Card4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="தமிழ்"
+            android:textSize="15dp"
+            android:fontFamily="@font/popsemi"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="250dp"
+        android:id="@+id/submitLang"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/popbold"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

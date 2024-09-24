@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Term &amp; Conditions"
+            android:id="@+id/PrivacyPolicy"
+            android:textColor="@color/primary_color_light_blue"
+            android:textSize="20dp"
+            android:fontFamily="@font/popbold"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:fontFamily="@font/popreg"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/PrivacyPolicy"
+            android:text="These Terms &amp; Conditions of Service apply to all users of the Hello Mistri Service. Information provided by our users through the Hello Mistri Service may contain links to third-party websites that are not owned or controlled by Hello Mistri. Hello Mistri has no control over and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites. Also, Hello Mistri does not assume any liability for any mistakes, misstatements of law, defamation, omissions, falsehood, obscenity, pornography, or profanity in the statements, opinions, representations, or any other form of third-party content on the Site. In addition, Hello Mistri will not and cannot censor or edit the content of any third-party site. By using the Service, you expressly acknowledge that the information and opinions in the third-party content represent solely the thoughts of the author and are neither endorsed by nor does it necessarily reflect Hello Mistri's belief.
+Service: Home &amp; appliance repair providers may charge a service fee to cover the cost of diagnosing the issue with your appliance. This fee may be waived if you agree to the repair.
+Repair costs: The cost of repairing your home or appliance will depend on the type of repair needed and the parts required. The provider will provide you with a quote for the repair before beginning work.
+Warranty: Most home &amp; appliance repair providers will offer a warranty for the work performed. The warranty may vary depending on the company, but it typically covers the repair work and any parts used.
+Payment: Payment for any home repair services is usually due upon completion of the work. You may be required to discuss this before the work begins.
+Cancellation: If you need to cancel your appointment, you should do so as soon as possible. Some providers may charge a cancellation fee if you cancel within a certain timeframe.
+Liability: Providers typically have liability insurance to cover any damage that may occur while they are working on your appliance or home. However, it's always a good idea to check with the provider to make sure they have adequate coverage.
+Privacy: Hello Mistri respect your privacy and keep any personal information you provide confidentially.
+Safety: We should prioritize safety and follow all necessary safety guidelines when working on-site. Hello Mistri shall not be responsible for any damages, claims, or other liability arising from or related to your use of any third-party website
+
+Please note that unless specifically defined in this Policy, capitalized terms shall have the same meaning ascribed to them in our Terms and Conditions, available at https://www.Hellomistri.in/terms (“Terms”). Please read this Policy in consonance with the Terms."
+            tools:ignore="HardcodedText" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

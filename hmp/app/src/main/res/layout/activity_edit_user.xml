@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".View.Edit_User"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/cordi"
+            android:fitsSystemWindows="true"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+
+                    app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:titleEnabled="false">
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:contentInsetStartWithNavigation="0dp"
+                        app:layout_collapseMode="pin"
+                        app:titleTextAppearance="@style/Toolbar.TitleText"
+                        app:popupTheme="@style/AppTheme.NoActionBar" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:clipToPadding="false"
+                android:scrollbars="none"
+                android:scrollingCache="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/provider_profile_image"
+                android:layout_width="120dp"
+
+                android:layout_height="120dp"
+                android:src="@drawable/hllo"
+                app:layout_anchor="@id/app_bar_layout"
+                app:layout_anchorGravity="bottom|center" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <TextView
+            android:id="@+id/ProviderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popsemi"
+            android:text="pid"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cordi"
+            tools:ignore="TextSizeCheck" />
+
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/popsemi"
+            android:text="Name"
+
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cordi"
+            tools:ignore="TextSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:maxLength="50"
+            android:editable="false"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name"
+            tools:ignore="Deprecated,SpeakableTextPresentCheck" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/popsemi"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userName"
+            tools:ignore="TextSizeCheck,TextSizeCheck,TextSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:maxLength="50"
+            android:enabled="false"
+            android:maxLines="1"
+            android:editable="false"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Email"
+            tools:ignore="Deprecated,SpeakableTextPresentCheck" />
+
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/popsemi"
+            android:text="Phone"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/userEmail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:editable="false"
+            android:enabled="false"
+
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Phone"
+            tools:ignore="Deprecated,SpeakableTextPresentCheck" />
+
+
+
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/popsemi"
+            android:text="Address"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/userPhone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:enabled="false"
+            android:maxLines="12"
+            android:minLines="7"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Address"
+            tools:ignore="Deprecated,SpeakableTextPresentCheck" />
+
+
+
+
+        <TextView
+            android:id="@+id/Pincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/popsemi"
+            android:text="City"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/userAddress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:maxLength="50"
+            android:editable="false"
+            android:enabled="false"
+
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Pincode"
+            tools:ignore="Deprecated,SpeakableTextPresentCheck" />
+
+
+
+        <TextView
+            android:id="@+id/Sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/popsemi"
+            android:text="Service Category"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/userPincode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userSubCtegory"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="3"
+            android:editable="false"
+            android:enabled="false"
+
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            app:layout_constraintTop_toBottomOf="@+id/Sub"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            tools:ignore="Deprecated" />
+
+
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/popsemi"
+            android:text="km"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/userSubCtegory"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userDis"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:editable="false"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:enabled="false"
+
+            app:layout_constraintTop_toBottomOf="@+id/dis"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            tools:ignore="Deprecated" />
+
+
+
+        <TextView
+            android:id="@+id/Adhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/popsemi"
+            android:text="AadharNumber"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/userDis"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/primary_color_light_blue" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/aadhar"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gooden"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:enabled="false"
+
+            app:layout_constraintTop_toBottomOf="@+id/Adhar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/primary_color_light_blue"
+            android:theme="@style/EditText.Green"
+            tools:ignore="Deprecated" />
+
+<ImageView
+    android:id="@id/image_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/aadhar"
+    tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_header"
+            app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/img_aaback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="30dp"
+            android:padding="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/img_aaback1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_rounded_green"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/ll2"
+              app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <View
+            app:layout_constraintTop_toBottomOf="@id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

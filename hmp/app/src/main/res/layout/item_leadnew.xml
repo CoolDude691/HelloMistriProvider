@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="10dp"
+    android:layout_height="wrap_content">
+
+<TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Saurabh Yadav"
+    android:textColor="@color/primary_color_light_blue"
+    android:textSize="17dp"
+    android:fontFamily="@font/popbold"/>
+
+
+    <TextView
+        android:id="@+id/addressI2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+        android:textSize="14dp"
+      android:text="Dak bangla Road Kasba Khas ghosi Mau 275105"
+      android:layout_marginTop="35dp"
+      android:textColor="@color/grey_600"
+      android:fontFamily="@font/popsemi"/>
+
+    <TextView
+        android:id="@+id/dateI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/07/2001"
+        android:textSize="14dp"
+        android:layout_marginTop="85dp"
+        android:textColor="@color/grey_600"
+        android:fontFamily="@font/popsemi"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/grey_500"/>
+
+    <TextView
+        android:id="@+id/timeI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:fontFamily="@font/popsemi"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center|top"
+        android:textColor="@color/grey_600"
+        android:text="10:28pm"/>
+
+    <TextView
+        android:id="@+id/leadI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/popsemi"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="right|top"
+        android:textColor="@color/black"
+        android:text="Rs: 100 / Lead"/>
+
+    <TextView
+        android:id="@+id/viewdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_color_light_blue"
+        android:fontFamily="@font/popbold"
+        android:text="View Details"
+        android:drawableRight="@drawable/baseline_arrow_right_24"
+        android:layout_gravity="right|bottom"/>
+
+    <TextView
+        android:id="@+id/statusI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending"
+        android:textSize="15dp"
+        android:paddingLeft="5dp"
+        android:fontFamily="@font/popbold"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/yellow_900"/>
+
+
+</androidx.cardview.widget.CardView>
